@@ -1,0 +1,17 @@
+import blogData from './data/blog.js';
+import Header from './components/Header';
+import About from './components/About';
+import ArticleList from './components/ArticleList';
+import './App.css';   // We'll create this next
+
+function App() {
+  return (
+    <div className="App">
+      <Header name={blogData.name} image={blogData.image} />
+      <About about={blogData.about} />
+      <ArticleList posts={blogData.posts} />
+    </div>
+  );
+}
+
+export default App;
